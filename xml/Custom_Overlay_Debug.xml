@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="98">
+	<zorder>100</zorder>
+	<visible>!Window.IsVisible(startup)</visible>
+	<controls>
+
+		<!-- Global debug grid -->
+
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>special://skin/extras/debuggrid1080.png</texture>
+			<colordiffuse>88ffffff</colordiffuse>
+			<visible>Skin.HasSetting(DebugGrid)</visible>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1144">
+	<defaultcontrol always="true">15000</defaultcontrol>
+	<include>Animation_DialogPopupOpenClose</include>
+	<controls>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<height>570</height>
+			<centertop>50%</centertop>
+			<width>800</width>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="800" />
+				<param name="height" value="570" />
+				<param name="header_label" value="$LOCALIZE[31912]" />
+				<param name="header_id" value="1" />
+			</include>
+			<control type="group" id="15000">
+				<left>0</left>
+				<top>80</top>
+				<control type="grouplist" id="15100">
+					<width>800</width>
+					<height>490</height>
+					<itemgap>0</itemgap>
+					<onup>15100</onup>
+					<ondown>15100</ondown>
+					<onright>60</onright>
+					<onleft>60</onleft>
+					<orientation>vertical</orientation>
+					<pagecontrol>60</pagecontrol>
+					<control type="radiobutton" id="15111">
+						<label>$LOCALIZE[31445]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediasourceflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediasourceflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15112">
+						<label>$LOCALIZE[31446]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediaresolutionflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediaresolutionflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15113">
+						<label>$LOCALIZE[31447]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediavideocodecflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediavideocodecflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15114">
+						<label>$LOCALIZE[31448]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediaaspectratioflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediaaspectratioflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15115">
+						<label>$LOCALIZE[31575]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediacolordepthflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediacolordepthflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15116">
+						<label>$LOCALIZE[31812]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdvideofpsflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdvideofpsflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15117">
+						<label>$LOCALIZE[31449]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediaaudiocodecflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediaaudiocodecflag)</onclick>
+					</control>
+					<control type="radiobutton" id="15118">
+						<label>$LOCALIZE[31450]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmediaaudiochannelsflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmediaaudiochannelsflag)</onclick>
+					</control>					
+					<control type="radiobutton" id="15119">
+						<label>$LOCALIZE[31803]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdaudiolangflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdaudiolangflag)</onclick>
+					</control>
+					<control type="radiobutton" id="11520">
+						<label>$LOCALIZE[31804]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdsublangflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdsublangflag)</onclick>
+					</control>
+					<!--control type="radiobutton" id="15121">
+						<label>$LOCALIZE[31573]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_osdmpaaflag)</selected>
+						<onclick>Skin.ToggleSetting(show_osdmpaaflag)</onclick>
+					</control-->
+				</control>
+				<include content="SettingsScrollbar">
+					<param name="height">485</param>
+					<param name="leftright">15100</param>
+				</include>
+			</control>
+		</control>
+	</controls>
+</window>

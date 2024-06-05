@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1150">
+	<defaultcontrol always="true">14000</defaultcontrol>
+	<include>Animation_DialogPopupOpenClose</include>
+	<controls>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<height>570</height>
+			<centertop>50%</centertop>
+			<width>800</width>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="800" />
+				<param name="height" value="570" />
+				<param name="header_label" value="$LOCALIZE[31864]" />
+				<param name="header_id" value="1" />
+			</include>
+			<control type="group" id="14000">
+				<left>0</left>
+				<top>80</top>
+				<control type="grouplist" id="14100">
+					<width>800</width>
+					<height>490</height>
+					<itemgap>0</itemgap>
+					<onup>13100</onup>
+					<ondown>13100</ondown>
+					<onright>60</onright>
+					<onleft>60</onleft>
+					<orientation>vertical</orientation>
+					<pagecontrol>60</pagecontrol>
+					<control type="radiobutton" id="14111">
+						<label>$LOCALIZE[31865]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttonfilemanager)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttonfilemanager)</onclick>
+					</control>
+					<control type="radiobutton" id="14112">
+						<label>$LOCALIZE[31866]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttonextendedinfo)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttonextendedinfo)</onclick>
+					</control>
+					<control type="radiobutton" id="14113">
+						<label>$LOCALIZE[31867]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttonset)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttonset)</onclick>
+					</control>
+					<control type="radiobutton" id="14114">
+						<label>$LOCALIZE[31868]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttonversions)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttonversions)</onclick>
+					</control>
+					<control type="radiobutton" id="14115">
+						<label>$LOCALIZE[31869]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttondirector)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttondirector)</onclick>
+					</control>
+					<control type="radiobutton" id="14116">
+						<label>$LOCALIZE[31870]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttonrating)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttonrating)</onclick>
+					</control>
+					<control type="radiobutton" id="14117">
+						<label>$LOCALIZE[31871]</label>
+						<include>DefaultSettingButton</include>
+						<selected>!Skin.HasSetting(show_infodialogbuttonartdownload)</selected>
+						<onclick>Skin.ToggleSetting(show_infodialogbuttonartdownload)</onclick>
+					</control>
+				</control>
+				<include content="SettingsScrollbar">
+					<param name="height">485</param>
+					<param name="leftright">14100</param>
+				</include>
+			</control>
+		</control>
+	</controls>
+</window>
