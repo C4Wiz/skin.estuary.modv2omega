@@ -365,10 +365,10 @@
 		<value condition="Control.HasFocus(5084) + !String.IsEmpty(Container(5084).ListItem.Duration)">$INFO[Container(5084).ListItem.Duration(h)]h$INFO[Container(5084).ListItem.Duration(mm)]</value>
 		<value condition="Control.HasFocus(5094) + !String.IsEmpty(Container(5094).ListItem.Duration)">$INFO[Container(5094).ListItem.Duration(h)]h$INFO[Container(5094).ListItem.Duration(mm)]</value>
 		<value condition="Control.HasFocus(5083) + !String.IsEmpty(Container(5083).ListItem.Duration)">$INFO[Container(5083).ListItem.Duration(h)]h$INFO[Container(5083).ListItem.Duration(mm)]</value>
-		<value>$INFO[ListItem.Duration(h)]h $INFO[ListItem.Duration(mm)]m</value>
+		<value>$INFO[ListItem.Duration(h)]h$INFO[ListItem.Duration(mm)]m</value>
 	</variable>
 	<variable name="PlayerDurationVar">
-		<value>$INFO[Player.Duration(h)]h $INFO[Player.Duration(mm)]m</value>
+		<value>$INFO[Player.Duration(h)]h$INFO[Player.Duration(mm)]m</value>
 	</variable>
 	<variable name="SettingsViewsImagesVar">
 		<value condition="Container.Content(movies) + Control.HasFocus(11111)">special://skin/extras/views/movies/50.png</value>
