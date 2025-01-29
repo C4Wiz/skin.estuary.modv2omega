@@ -3,6 +3,8 @@
 	<defaultcontrol always="true">15100</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<menucontrol>10000</menucontrol>
+	<!-- Refresh Weather when page opens-->
+	<onload>Weather.Refresh</onload>
 	<controls>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
